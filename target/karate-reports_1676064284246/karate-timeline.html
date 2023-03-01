@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/karate\/bdd\/feature\/CreditReportService[1:7]","start":1676063895681,"end":1676063896935,"title":"com\/karate\/bdd\/feature\/CreditReportService[1:7] 15:18:15.681-15:18:16.935 To test for the ping endpoint"},{"id":2,"group":2,"content":"com\/karate\/bdd\/feature\/CreditReportService[2:14]","start":1676063895682,"end":1676063902228,"title":"com\/karate\/bdd\/feature\/CreditReportService[2:14] 15:18:15.682-15:18:22.228 To test for the orderReport endpoint"},{"id":3,"group":3,"content":"com\/karate\/bdd\/feature\/CreditReportService[3:24]","start":1676063895681,"end":1676063902519,"title":"com\/karate\/bdd\/feature\/CreditReportService[3:24] 15:18:15.681-15:18:22.519 To test for the orderReport-v2 endpoint"},{"id":4,"group":4,"content":"com\/karate\/bdd\/feature\/CreditReportService[4:34]","start":1676063895682,"end":1676063902345,"title":"com\/karate\/bdd\/feature\/CreditReportService[4:34] 15:18:15.682-15:18:22.345 To test for the processRequestRfi endpoint"},{"id":5,"group":5,"content":"com\/karate\/bdd\/feature\/CreditReportService[5:44]","start":1676063895681,"end":1676063902103,"title":"com\/karate\/bdd\/feature\/CreditReportService[5:44] 15:18:15.681-15:18:22.103 To test for the processRequestRfi endpoint with no Gender"},{"id":6,"group":1,"content":"com\/karate\/bdd\/feature\/CreditReportService[6:54]","start":1676063896945,"end":1676063897196,"title":"com\/karate\/bdd\/feature\/CreditReportService[6:54] 15:18:16.945-15:18:17.196 To test for the health endpoint"},{"id":7,"group":1,"content":"com\/karate\/bdd\/feature\/CreditReportService[7:61]","start":1676063897212,"end":1676063897480,"title":"com\/karate\/bdd\/feature\/CreditReportService[7:61] 15:18:17.212-15:18:17.480 To test for the prometheus endpoint"},{"id":8,"group":1,"content":"com\/karate\/bdd\/feature\/CreditReportService[8:68]","start":1676063897485,"end":1676063897731,"title":"com\/karate\/bdd\/feature\/CreditReportService[8:68] 15:18:17.485-15:18:17.731 To test for the liveness endpoint"},{"id":9,"group":1,"content":"com\/karate\/bdd\/feature\/CreditReportService[9:76]","start":1676063897736,"end":1676063897959,"title":"com\/karate\/bdd\/feature\/CreditReportService[9:76] 15:18:17.736-15:18:17.959 To test for the readiness endpoint"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

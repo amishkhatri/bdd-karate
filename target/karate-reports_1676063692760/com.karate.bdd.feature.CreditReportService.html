@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("45ee90bd-a039-47ee-a401-1241e0a1c39d",{name:"1022086"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.karate.bdd.feature.CreditReportService</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-02-10 03:12:05 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>To test for the ping endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>To test for the orderReport endpoint</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:24]"><span>[3:24]</span> <span>To test for the orderReportV2 endpoint</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:34]"><span>[4:34]</span> <span>To test for the processRequestRfi endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:44]"><span>[5:44]</span> <span>To test for the health endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:51]"><span>[6:51]</span> <span>To test for the prometheus endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:58]"><span>[7:58]</span> <span>To test for the liveness endpoint</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:66]"><span>[8:66]</span> <span>To test for the readiness endpoint</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/karate/bdd/feature/CreditReportService.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Credit Report Service for different flows</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">To test for the ping endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>907</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:02.478 Loading karate-config 
+15:12:02.480 Karate environment:i0 
+15:12:02.483 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">146</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/ping&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">755</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:12:03.437 [print] {
+  &quot;Current-Time&quot;: &quot;2023-02-10T15:12:03.395&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">To test for the orderReport endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2950</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:02.512 Loading karate-config 
+15:12:02.513 Karate environment:i0 
+15:12:02.514 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">148</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orderReport&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param clientId = &#39;SoapUI&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param transId = &#39;123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param rfi = &#39;&lt;rfi&gt;&lt;origin&gt;SoapUI&lt;/origin&gt;&lt;BusinessType&gt;N&lt;/BusinessType&gt;&lt;command/&gt;&lt;selectedState&gt;FL&lt;/selectedState&gt;&lt;selectedCompany&gt;ValueAdded&lt;/selectedCompany&gt;&lt;policyTypeNumber&gt;572&lt;/policyTypeNumber&gt;&lt;policyNumber/&gt;&lt;QuoteId/&gt;&lt;agent id=&quot;Agent%23 0&quot; company=&quot;80&quot;&gt;&lt;producercode&gt;990101&lt;/producercode&gt;&lt;subproducercode&gt;016243&lt;/subproducercode&gt;&lt;InfAgentCode&gt;5016243&lt;/InfAgentCode&gt;&lt;/agent&gt;&lt;driver id=&quot;Driver%23 0&quot;&gt;&lt;age&gt;34&lt;/age&gt;&lt;sex&gt;M&lt;/sex&gt;&lt;orderFR&gt;Y&lt;/orderFR&gt;&lt;relationship&gt;Insured&lt;/relationship&gt;&lt;lastName&gt;Wiley&lt;/lastName&gt;&lt;firstName&gt;Dan&lt;/firstName&gt;&lt;middleInitial&gt;T&lt;/middleInitial&gt;&lt;birthDate&gt;19670904&lt;/birthDate&gt;&lt;SSN&gt;111223333&lt;/SSN&gt;&lt;address&gt;12345 Main Street&lt;/address&gt;&lt;city&gt;Jasper&lt;/city&gt;&lt;state&gt;AL&lt;/state&gt;&lt;zip&gt;35501&lt;/zip&gt;&lt;/driver&gt;&lt;/rfi&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2746</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">15:12:05.483 [print] &lt;rfi&gt;
+  &lt;origin&gt;SoapUI&lt;/origin&gt;
+  &lt;BusinessType&gt;N&lt;/BusinessType&gt;
+  &lt;command/&gt;
+  &lt;FRModelType/&gt;
+  &lt;selectedState&gt;FL&lt;/selectedState&gt;
+  &lt;selectedCompany&gt;ValueAdded&lt;/selectedCompany&gt;
+  &lt;policyTypeNumber&gt;572&lt;/policyTypeNumber&gt;
+  &lt;policyNumber/&gt;
+  &lt;creditScoreId/&gt;
+  &lt;QuoteId&gt;0&lt;/QuoteId&gt;
+  &lt;PotentialFraudIndicator&gt;N&lt;/PotentialFraudIndicator&gt;
+  &lt;agent company=&quot;80&quot; id=&quot;Agent%23 0&quot;&gt;
+    &lt;producercode&gt;990101&lt;/producercode&gt;
+    &lt;subproducercode&gt;016243&lt;/subproducercode&gt;
+    &lt;InfAgentCode&gt;5016243&lt;/InfAgentCode&gt;
+  &lt;/agent&gt;
+  &lt;driver id=&quot;Driver%23 0&quot;&gt;
+    &lt;age&gt;34&lt;/age&gt;
+    &lt;sex&gt;M&lt;/sex&gt;
+    &lt;orderFR&gt;Y&lt;/orderFR&gt;
+    &lt;relationship&gt;Insured&lt;/relationship&gt;
+    &lt;lastName&gt;Wiley&lt;/lastName&gt;
+    &lt;firstName&gt;Dan&lt;/firstName&gt;
+    &lt;middleInitial&gt;T&lt;/middleInitial&gt;
+    &lt;suffix/&gt;
+    &lt;birthDate&gt;19670904&lt;/birthDate&gt;
+    &lt;SSN&gt;111223333&lt;/SSN&gt;
+    &lt;address&gt;12345 Main Street&lt;/address&gt;
+    &lt;city&gt;Jasper&lt;/city&gt;
+    &lt;state&gt;AL&lt;/state&gt;
+    &lt;zip&gt;35501&lt;/zip&gt;
+    &lt;creditScoreMethod/&gt;
+    &lt;attractScore/&gt;
+    &lt;FRLevel&gt;0&lt;/FRLevel&gt;
+    &lt;FRScore&gt;0000&lt;/FRScore&gt;
+    &lt;FRStatus&gt;X&lt;/FRStatus&gt;
+    &lt;FRReason&gt;Unable to process vendor data.&lt;/FRReason&gt;
+    &lt;FRValid/&gt;
+    &lt;FRReferenceNumber/&gt;
+    &lt;FRMortgageVerified/&gt;
+    &lt;FRReasonCode1/&gt;
+    &lt;FRReasonCode2/&gt;
+    &lt;FRReasonCode3/&gt;
+    &lt;FRReasonCode4/&gt;
+    &lt;FROrderDate/&gt;
+    &lt;points4OldestTradeline&gt;-1&lt;/points4OldestTradeline&gt;
+    &lt;FRState/&gt;
+    &lt;FRZip/&gt;
+  &lt;/driver&gt;
+&lt;/rfi&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">To test for the orderReportV2 endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>922</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:02.440 Loading karate-config 
+15:12:02.451 Karate environment:i0 
+15:12:02.453 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">148</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orderReportV2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param clientId = &#39;SoapUI&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param transId = &#39;123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param rfi = &#39;&lt;rfi&gt;&lt;origin&gt;SoapUI&lt;/origin&gt;&lt;BusinessType&gt;N&lt;/BusinessType&gt;&lt;command/&gt;&lt;selectedState&gt;FL&lt;/selectedState&gt;&lt;selectedCompany&gt;ValueAdded&lt;/selectedCompany&gt;&lt;policyTypeNumber&gt;572&lt;/policyTypeNumber&gt;&lt;policyNumber/&gt;&lt;QuoteId/&gt;&lt;agent id=&quot;Agent%23 0&quot; company=&quot;80&quot;&gt;&lt;producercode&gt;990101&lt;/producercode&gt;&lt;subproducercode&gt;016243&lt;/subproducercode&gt;&lt;InfAgentCode&gt;5016243&lt;/InfAgentCode&gt;&lt;/agent&gt;&lt;driver id=&quot;Driver%23 0&quot;&gt;&lt;age&gt;34&lt;/age&gt;&lt;sex&gt;M&lt;/sex&gt;&lt;orderFR&gt;Y&lt;/orderFR&gt;&lt;relationship&gt;Insured&lt;/relationship&gt;&lt;lastName&gt;Wiley&lt;/lastName&gt;&lt;firstName&gt;Dan&lt;/firstName&gt;&lt;middleInitial&gt;T&lt;/middleInitial&gt;&lt;birthDate&gt;19670904&lt;/birthDate&gt;&lt;SSN&gt;111223333&lt;/SSN&gt;&lt;address&gt;12345 Main Street&lt;/address&gt;&lt;city&gt;Jasper&lt;/city&gt;&lt;state&gt;AL&lt;/state&gt;&lt;zip&gt;35501&lt;/zip&gt;&lt;/driver&gt;&lt;/rfi&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">766</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">15:12:03.450 classpath:com/karate/bdd/feature/CreditReportService.feature:31
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 430, url: https://crsi0.pri.kemper.com/orderReportV2?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWiley%3C%2FlastName%3E%3CfirstName%3EDan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{
+  &quot;timestamp&quot; : &quot;2023-02-10T21:12:03.419+00:00&quot;,
+  &quot;status&quot; : 404,
+  &quot;error&quot; : &quot;Not Found&quot;,
+  &quot;path&quot; : &quot;/orderReportV2&quot;
+}
+classpath:com/karate/bdd/feature/CreditReportService.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:34]</span>
+                <span class="scenario-name">To test for the processRequestRfi endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:02.495 Loading karate-config 
+15:12:02.496 Karate environment:i0 
+15:12:02.498 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">148</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/processRequestRfi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param clientId = &#39;SoapUI&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param transId = &#39;123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param rfi = &#39;&lt;rfi&gt;&lt;origin&gt;SoapUI&lt;/origin&gt;&lt;BusinessType&gt;N&lt;/BusinessType&gt;&lt;command/&gt;&lt;selectedState&gt;FL&lt;/selectedState&gt;&lt;selectedCompany&gt;ValueAdded&lt;/selectedCompany&gt;&lt;policyTypeNumber&gt;572&lt;/policyTypeNumber&gt;&lt;policyNumber/&gt;&lt;QuoteId/&gt;&lt;agent id=&quot;Agent%23 0&quot; company=&quot;80&quot;&gt;&lt;producercode&gt;990101&lt;/producercode&gt;&lt;subproducercode&gt;016243&lt;/subproducercode&gt;&lt;InfAgentCode&gt;5016243&lt;/InfAgentCode&gt;&lt;/agent&gt;&lt;driver id=&quot;Driver%23 0&quot;&gt;&lt;age&gt;34&lt;/age&gt;&lt;sex&gt;M&lt;/sex&gt;&lt;orderFR&gt;Y&lt;/orderFR&gt;&lt;relationship&gt;Insured&lt;/relationship&gt;&lt;lastName&gt;Wiley&lt;/lastName&gt;&lt;firstName&gt;Dan&lt;/firstName&gt;&lt;middleInitial&gt;T&lt;/middleInitial&gt;&lt;birthDate&gt;19670904&lt;/birthDate&gt;&lt;SSN&gt;111223333&lt;/SSN&gt;&lt;address&gt;12345 Main Street&lt;/address&gt;&lt;city&gt;Jasper&lt;/city&gt;&lt;state&gt;AL&lt;/state&gt;&lt;zip&gt;35501&lt;/zip&gt;&lt;/driver&gt;&lt;/rfi&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">773</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref failed">41</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">15:12:03.458 classpath:com/karate/bdd/feature/CreditReportService.feature:41
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 440, url: https://crsi0.pri.kemper.com/processRequestRfi?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWiley%3C%2FlastName%3E%3CfirstName%3EDan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{
+  &quot;timestamp&quot; : &quot;2023-02-10T21:12:03.419+00:00&quot;,
+  &quot;status&quot; : 404,
+  &quot;error&quot; : &quot;Not Found&quot;,
+  &quot;path&quot; : &quot;/processRequestRfi&quot;
+}
+classpath:com/karate/bdd/feature/CreditReportService.feature:41
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:44]</span>
+                <span class="scenario-name">To test for the health endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>907</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:02.504 Loading karate-config 
+15:12:02.505 Karate environment:i0 
+15:12:02.507 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">148</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/actuator/health&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">754</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">15:12:03.438 [print] {
+  &quot;status&quot;: &quot;UP&quot;,
+  &quot;components&quot;: {
+    &quot;db&quot;: {
+      &quot;status&quot;: &quot;UP&quot;,
+      &quot;details&quot;: {
+        &quot;database&quot;: &quot;PostgreSQL&quot;,
+        &quot;validationQuery&quot;: &quot;Select 1&quot;,
+        &quot;result&quot;: 1
+      }
+    },
+    &quot;diskSpace&quot;: {
+      &quot;status&quot;: &quot;UP&quot;,
+      &quot;details&quot;: {
+        &quot;total&quot;: 21462233088,
+        &quot;free&quot;: 9900646400,
+        &quot;threshold&quot;: 10485760,
+        &quot;exists&quot;: true
+      }
+    },
+    &quot;livenessState&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;ping&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;readinessState&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    }
+  },
+  &quot;groups&quot;: [
+    &quot;liveness&quot;,
+    &quot;readiness&quot;
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:51]</span>
+                <span class="scenario-name">To test for the prometheus endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>270</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:03.478 Loading karate-config 
+15:12:03.479 Karate environment:i0 
+15:12:03.480 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;actuator/prometheus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">262</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">15:12:03.754 [print] # HELP cache_evictions_total The number of times the cache was evicted.
+# TYPE cache_evictions_total counter
+cache_evictions_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_evictions_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_evictions_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 0.0
+cache_evictions_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 0.0
+cache_evictions_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_evictions_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 0.0
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+# TYPE process_uptime_seconds gauge
+process_uptime_seconds 783842.151
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+# TYPE jvm_threads_live_threads gauge
+jvm_threads_live_threads 56.0
+# HELP jvm_gc_memory_promoted_bytes_total Count of positive increases in the size of the old generation memory pool before GC to after GC
+# TYPE jvm_gc_memory_promoted_bytes_total counter
+jvm_gc_memory_promoted_bytes_total 3.7884744E7
+# HELP tomcat_sessions_alive_max_seconds  
+# TYPE tomcat_sessions_alive_max_seconds gauge
+tomcat_sessions_alive_max_seconds 0.0
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+# TYPE jvm_memory_committed_bytes gauge
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 3.57957632E8
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;profiled nmethods&#39;&quot;,} 2.1692416E7
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 1.43261696E8
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} 9.535488E7
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-nmethods&#39;&quot;,} 2555904.0
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 1.7891328E7
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 1.2320768E7
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-profiled nmethods&#39;&quot;,} 1.1665408E7
+# HELP process_cpu_usage The &quot;recent cpu usage&quot; for the Java Virtual Machine process
+# TYPE process_cpu_usage gauge
+process_cpu_usage 0.022727272727272728
+# HELP cache_xa_commits_total The number of transaction commits
+# TYPE cache_xa_commits_total counter
+cache_xa_commits_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;committed&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;readOnly&quot;,} 0.0
+cache_xa_commits_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;exception&quot;,} 0.0
+# HELP system_cpu_usage The &quot;recent cpu usage&quot; of the system the application is running in
+# TYPE system_cpu_usage gauge
+system_cpu_usage 0.022657273636363637
+# HELP cache_removals_total Cache removals
+# TYPE cache_removals_total counter
+cache_removals_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_removals_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_removals_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 0.0
+cache_removals_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 0.0
+cache_removals_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_removals_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 0.0
+# HELP disk_free_bytes Usable space for path
+# TYPE disk_free_bytes gauge
+disk_free_bytes{path=&quot;/.&quot;,} 9.120182272E9
+# HELP http_server_requests_seconds Duration of HTTP server request handling
+# TYPE http_server_requests_seconds summary
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/ping&quot;,} 2.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/ping&quot;,} 0.12241125
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 13064.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 27.062299447
+http_server_requests_seconds_count{exception=&quot;CrsException&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/orderReport&quot;,} 1.0
+http_server_requests_seconds_sum{exception=&quot;CrsException&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/orderReport&quot;,} 2.648686884
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 52258.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 23.649416748
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 3211.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 28.552392902
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 1194104.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 85.638871948
+# HELP http_server_requests_seconds_max Duration of HTTP server request handling
+# TYPE http_server_requests_seconds_max gauge
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/ping&quot;,} 9.44894E-4
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 0.032397424
+http_server_requests_seconds_max{exception=&quot;CrsException&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/orderReport&quot;,} 2.648686884
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 6.07165E-4
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 0.009002967
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 3.61869E-4
+# HELP spring_data_repository_invocations_seconds_max Duration of repository invocations
+# TYPE spring_data_repository_invocations_seconds_max gauge
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;getNextCreditScoreId&quot;,repository=&quot;CreditScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 0.125457953
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;StateRepository&quot;,state=&quot;SUCCESS&quot;,} 0.033851541
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;CompanyRepository&quot;,state=&quot;SUCCESS&quot;,} 0.051081143
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findCreditReport90Days&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.678168056
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findCreditReport48Hours&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.616896405
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findCreditReport90DaysCount&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.714632222
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findByStateCodeAndCompanyIdAndPolicyType&quot;,repository=&quot;CreditScoreMethodRepository&quot;,state=&quot;SUCCESS&quot;,} 0.027204054
+# HELP spring_data_repository_invocations_seconds Duration of repository invocations
+# TYPE spring_data_repository_invocations_seconds summary
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;getNextCreditScoreId&quot;,repository=&quot;CreditScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 2.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;getNextCreditScoreId&quot;,repository=&quot;CreditScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 0.129186036
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;StateRepository&quot;,state=&quot;SUCCESS&quot;,} 2.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;StateRepository&quot;,state=&quot;SUCCESS&quot;,} 0.037778809
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;CompanyRepository&quot;,state=&quot;SUCCESS&quot;,} 1.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findById&quot;,repository=&quot;CompanyRepository&quot;,state=&quot;SUCCESS&quot;,} 0.051081143
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findCreditReport90Days&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 1.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findCreditReport90Days&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.678168056
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findCreditReport48Hours&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 1.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findCreditReport48Hours&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.616896405
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findCreditReport90DaysCount&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 1.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findCreditReport90DaysCount&quot;,repository=&quot;CreditScoreTextRepository&quot;,state=&quot;SUCCESS&quot;,} 0.714632222
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findByStateCodeAndCompanyIdAndPolicyType&quot;,repository=&quot;CreditScoreMethodRepository&quot;,state=&quot;SUCCESS&quot;,} 1.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findByStateCodeAndCompanyIdAndPolicyType&quot;,repository=&quot;CreditScoreMethodRepository&quot;,state=&quot;SUCCESS&quot;,} 0.027204054
+# HELP logback_events_total Number of events that made it to the logs
+# TYPE logback_events_total counter
+logback_events_total{level=&quot;warn&quot;,} 4.0
+logback_events_total{level=&quot;debug&quot;,} 0.0
+logback_events_total{level=&quot;error&quot;,} 2.0
+logback_events_total{level=&quot;trace&quot;,} 0.0
+logback_events_total{level=&quot;info&quot;,} 37.0
+# HELP cache_size The number of entries in this cache. This may be an approximation, depending on the type of cache.
+# TYPE cache_size gauge
+cache_size{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_size{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_size{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 1.0
+cache_size{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 2.0
+cache_size{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_size{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 1.0
+# HELP cache_local_disk_size_bytes Local disk size
+# TYPE cache_local_disk_size_bytes gauge
+cache_local_disk_size_bytes{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_local_disk_size_bytes{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_local_disk_size_bytes{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 0.0
+cache_local_disk_size_bytes{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 0.0
+cache_local_disk_size_bytes{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_local_disk_size_bytes{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 0.0
+# HELP executor_pool_size_threads The current number of threads in the pool
+# TYPE executor_pool_size_threads gauge
+executor_pool_size_threads{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP jvm_gc_memory_allocated_bytes_total Incremented for an increase in the size of the (young) heap memory pool after one GC to before the next
+# TYPE jvm_gc_memory_allocated_bytes_total counter
+jvm_gc_memory_allocated_bytes_total 7.2723499512E10
+# HELP tomcat_sessions_expired_sessions_total  
+# TYPE tomcat_sessions_expired_sessions_total counter
+tomcat_sessions_expired_sessions_total 0.0
+# HELP jvm_classes_unloaded_classes_total The total number of classes unloaded since the Java virtual machine has started execution
+# TYPE jvm_classes_unloaded_classes_total counter
+jvm_classes_unloaded_classes_total 0.0
+# HELP process_files_open_files The open file descriptor count
+# TYPE process_files_open_files gauge
+process_files_open_files 23.0
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+# TYPE jvm_threads_daemon_threads gauge
+jvm_threads_daemon_threads 52.0
+# HELP executor_active_threads The approximate number of threads that are actively executing tasks
+# TYPE executor_active_threads gauge
+executor_active_threads{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP executor_queue_remaining_tasks The number of additional elements that this queue can ideally accept without blocking
+# TYPE executor_queue_remaining_tasks gauge
+executor_queue_remaining_tasks{name=&quot;applicationTaskExecutor&quot;,} 2.147483647E9
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+# TYPE jvm_buffer_total_capacity_bytes gauge
+jvm_buffer_total_capacity_bytes{id=&quot;mapped - &#39;non-volatile memory&#39;&quot;,} 0.0
+jvm_buffer_total_capacity_bytes{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_total_capacity_bytes{id=&quot;direct&quot;,} 116415.0
+# HELP tomcat_sessions_created_sessions_total  
+# TYPE tomcat_sessions_created_sessions_total counter
+tomcat_sessions_created_sessions_total 0.0
+# HELP jvm_gc_max_data_size_bytes Max size of long-lived heap memory pool
+# TYPE jvm_gc_max_data_size_bytes gauge
+jvm_gc_max_data_size_bytes 7.15849728E8
+# HELP cache_puts_added_total Cache puts (added or updated)
+# TYPE cache_puts_added_total counter
+cache_puts_added_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;added&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;updated&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;added&quot;,} 1.0
+cache_puts_added_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;added&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;updated&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;updated&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;updated&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;added&quot;,} 1.0
+cache_puts_added_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;added&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;added&quot;,} 2.0
+cache_puts_added_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;updated&quot;,} 0.0
+cache_puts_added_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;updated&quot;,} 0.0
+# HELP cache_local_heap_size_bytes Local heap size
+# TYPE cache_local_heap_size_bytes gauge
+cache_local_heap_size_bytes{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_local_heap_size_bytes{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_local_heap_size_bytes{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 384.0
+cache_local_heap_size_bytes{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 624.0
+cache_local_heap_size_bytes{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_local_heap_size_bytes{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 672.0
+# HELP application_started_time_seconds Time taken (ms) to start the application
+# TYPE application_started_time_seconds gauge
+application_started_time_seconds{main_application_class=&quot;com.ipacc.underwritingservices.crs.config.ApplicationConfig&quot;,} 27.525
+# HELP application_ready_time_seconds Time taken (ms) for the application to be ready to service requests
+# TYPE application_ready_time_seconds gauge
+application_ready_time_seconds{main_application_class=&quot;com.ipacc.underwritingservices.crs.config.ApplicationConfig&quot;,} 27.585
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+# TYPE jvm_classes_loaded_classes gauge
+jvm_classes_loaded_classes 18113.0
+# HELP executor_pool_core_threads The core number of threads for the pool
+# TYPE executor_pool_core_threads gauge
+executor_pool_core_threads{name=&quot;applicationTaskExecutor&quot;,} 8.0
+# HELP cache_xa_rollbacks_total The number of transaction rollbacks
+# TYPE cache_xa_rollbacks_total counter
+cache_xa_rollbacks_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;exception&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_rollbacks_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;exception&quot;,} 0.0
+# HELP jvm_memory_used_bytes The amount of used memory
+# TYPE jvm_memory_used_bytes gauge
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 5.0424488E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;profiled nmethods&#39;&quot;,} 1.9266688E7
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 1.37915776E8
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} 9.4579992E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-nmethods&#39;&quot;,} 1428864.0
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 206816.0
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 1.1953872E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-profiled nmethods&#39;&quot;,} 1.1517696E7
+# HELP cache_puts_total The number of entries added to the cache
+# TYPE cache_puts_total counter
+cache_puts_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_puts_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_puts_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 1.0
+cache_puts_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 2.0
+cache_puts_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_puts_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 1.0
+# HELP jvm_memory_usage_after_gc_percent The percentage of long-lived heap pool used after the last GC event, in the range [0..1]
+# TYPE jvm_memory_usage_after_gc_percent gauge
+jvm_memory_usage_after_gc_percent{area=&quot;heap&quot;,pool=&quot;long-lived&quot;,} 0.07044004632212418
+# HELP cache_misses_total The number of times cache lookup methods have not returned a value, due to expiry or because the key was not found
+# TYPE cache_misses_total counter
+cache_misses_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,reason=&quot;notFound&quot;,} 0.0
+cache_misses_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,reason=&quot;expired&quot;,} 0.0
+cache_misses_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,reason=&quot;notFound&quot;,} 1.0
+cache_misses_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,reason=&quot;notFound&quot;,} 0.0
+cache_misses_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,reason=&quot;expired&quot;,} 0.0
+cache_misses_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,reason=&quot;expired&quot;,} 0.0
+cache_misses_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,reason=&quot;notFound&quot;,} 2.0
+cache_misses_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,reason=&quot;expired&quot;,} 0.0
+cache_misses_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,reason=&quot;expired&quot;,} 0.0
+cache_misses_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,reason=&quot;notFound&quot;,} 0.0
+cache_misses_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,reason=&quot;notFound&quot;,} 1.0
+cache_misses_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,reason=&quot;expired&quot;,} 0.0
+# HELP executor_completed_tasks_total The approximate total number of tasks that have completed execution
+# TYPE executor_completed_tasks_total counter
+executor_completed_tasks_total{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP cache_local_offheap_size_bytes Local off-heap size
+# TYPE cache_local_offheap_size_bytes gauge
+cache_local_offheap_size_bytes{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_local_offheap_size_bytes{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_local_offheap_size_bytes{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 0.0
+cache_local_offheap_size_bytes{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 0.0
+cache_local_offheap_size_bytes{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_local_offheap_size_bytes{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 0.0
+# HELP cache_gets_total The number of times cache lookup methods have returned a cached (hit) or uncached (newly loaded or null) value (miss).
+# TYPE cache_gets_total counter
+cache_gets_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;miss&quot;,} 2.0
+cache_gets_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;miss&quot;,} 1.0
+cache_gets_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;miss&quot;,} 0.0
+cache_gets_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;hit&quot;,} 0.0
+cache_gets_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;hit&quot;,} 0.0
+cache_gets_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;hit&quot;,} 2.0
+cache_gets_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;hit&quot;,} 0.0
+cache_gets_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;miss&quot;,} 0.0
+cache_gets_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;hit&quot;,} 1.0
+cache_gets_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;hit&quot;,} 1.0
+cache_gets_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;miss&quot;,} 1.0
+cache_gets_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;miss&quot;,} 0.0
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+# TYPE jvm_buffer_count_buffers gauge
+jvm_buffer_count_buffers{id=&quot;mapped - &#39;non-volatile memory&#39;&quot;,} 0.0
+jvm_buffer_count_buffers{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_count_buffers{id=&quot;direct&quot;,} 38.0
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+# TYPE jvm_threads_peak_threads gauge
+jvm_threads_peak_threads 56.0
+# HELP executor_pool_max_threads The maximum allowed number of threads in the pool
+# TYPE executor_pool_max_threads gauge
+executor_pool_max_threads{name=&quot;applicationTaskExecutor&quot;,} 2.147483647E9
+# HELP system_load_average_1m The sum of the number of runnable entities queued to available processors and the number of runnable entities running on the available processors averaged over a period of time
+# TYPE system_load_average_1m gauge
+system_load_average_1m 0.3056640625
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+# TYPE jvm_buffer_memory_used_bytes gauge
+jvm_buffer_memory_used_bytes{id=&quot;mapped - &#39;non-volatile memory&#39;&quot;,} 0.0
+jvm_buffer_memory_used_bytes{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_memory_used_bytes{id=&quot;direct&quot;,} 116415.0
+# HELP jvm_gc_overhead_percent An approximation of the percent of CPU time used by GC activities over the last lookback period or since monitoring began, whichever is shorter, in the range [0..1]
+# TYPE jvm_gc_overhead_percent gauge
+jvm_gc_overhead_percent 0.0
+# HELP tomcat_sessions_active_max_sessions  
+# TYPE tomcat_sessions_active_max_sessions gauge
+tomcat_sessions_active_max_sessions 0.0
+# HELP tomcat_sessions_rejected_sessions_total  
+# TYPE tomcat_sessions_rejected_sessions_total counter
+tomcat_sessions_rejected_sessions_total 0.0
+# HELP cache_xa_recoveries_total The number of transaction recoveries
+# TYPE cache_xa_recoveries_total counter
+cache_xa_recoveries_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;nothing&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,result=&quot;nothing&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,result=&quot;nothing&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,result=&quot;nothing&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,result=&quot;success&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,result=&quot;nothing&quot;,} 0.0
+cache_xa_recoveries_total{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,result=&quot;nothing&quot;,} 0.0
+# HELP tomcat_sessions_active_current_sessions  
+# TYPE tomcat_sessions_active_current_sessions gauge
+tomcat_sessions_active_current_sessions 0.0
+# HELP jvm_threads_states_threads The current number of threads
+# TYPE jvm_threads_states_threads gauge
+jvm_threads_states_threads{state=&quot;runnable&quot;,} 9.0
+jvm_threads_states_threads{state=&quot;blocked&quot;,} 0.0
+jvm_threads_states_threads{state=&quot;waiting&quot;,} 28.0
+jvm_threads_states_threads{state=&quot;timed-waiting&quot;,} 19.0
+jvm_threads_states_threads{state=&quot;new&quot;,} 0.0
+jvm_threads_states_threads{state=&quot;terminated&quot;,} 0.0
+# HELP cache_remoteSize The number of entries held remotely in this cache
+# TYPE cache_remoteSize gauge
+cache_remoteSize{cache=&quot;findCreditModel&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditModel&quot;,} 0.0
+cache_remoteSize{cache=&quot;findPgmCreditRange&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findPgmCreditRange&quot;,} 0.0
+cache_remoteSize{cache=&quot;findCompany&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCompany&quot;,} 0.0
+cache_remoteSize{cache=&quot;findState&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findState&quot;,} 0.0
+cache_remoteSize{cache=&quot;findCreditScoreStep&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreStep&quot;,} 0.0
+cache_remoteSize{cache=&quot;findCreditScoreMethod&quot;,cache_manager=&quot;cacheManager&quot;,name=&quot;findCreditScoreMethod&quot;,} 0.0
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+# TYPE jvm_memory_max_bytes gauge
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 7.15849728E8
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;profiled nmethods&#39;&quot;,} 1.22912768E8
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 2.86326784E8
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} 1.073741824E9
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-nmethods&#39;&quot;,} 5828608.0
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 3.5782656E7
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 8.5983232E8
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap &#39;non-profiled nmethods&#39;&quot;,} 1.22916864E8
+# HELP disk_total_bytes Total space for path
+# TYPE disk_total_bytes gauge
+disk_total_bytes{path=&quot;/.&quot;,} 2.1462233088E10
+# HELP process_files_max_files The maximum file descriptor count
+# TYPE process_files_max_files gauge
+process_files_max_files 1048576.0
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.675279681543E9
+# HELP jvm_gc_live_data_size_bytes Size of long-lived heap memory pool after reclamation
+# TYPE jvm_gc_live_data_size_bytes gauge
+jvm_gc_live_data_size_bytes 2.7037752E7
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+# TYPE system_cpu_count gauge
+system_cpu_count 1.0
+# HELP executor_queued_tasks The approximate number of tasks that are queued for execution
+# TYPE executor_queued_tasks gauge
+executor_queued_tasks{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+# TYPE jvm_gc_pause_seconds summary
+jvm_gc_pause_seconds_count{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 2.0
+jvm_gc_pause_seconds_sum{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 0.223
+jvm_gc_pause_seconds_count{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 507.0
+jvm_gc_pause_seconds_sum{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 1.343
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+# TYPE jvm_gc_pause_seconds_max gauge
+jvm_gc_pause_seconds_max{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 0.0
+jvm_gc_pause_seconds_max{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 0.0
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:58]</span>
+                <span class="scenario-name">To test for the liveness endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>284</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:58]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:03.463 Loading karate-config 
+15:12:03.465 Karate environment:i0 
+15:12:03.466 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:58]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;actuator/health/liveness&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">227</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response contains {&quot;status&quot;: &quot;UP&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.64">15:12:03.756 [print] {
+  &quot;status&quot;: &quot;UP&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:66]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:66]</span>
+                <span class="scenario-name">To test for the readiness endpoint</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>285</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:66]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:12:03.470 Loading karate-config 
+15:12:03.470 Karate environment:i0 
+15:12:03.472 Karate baseURL:https://crsi0.pri.kemper.com 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[8:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;../data/crs-data-&#39; + env + &#39;.yml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;actuator/health/readiness&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">227</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response contains {&quot;status&quot;: &quot;UP&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.72">15:12:03.761 [print] {
+  &quot;status&quot;: &quot;UP&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

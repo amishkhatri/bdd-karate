@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: com/karate/bdd/feature/CreditReportService.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>occupation-service</td>
+            <td>10 Feb 2023, 15:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/karate/bdd/feature/CreditReportService.feature</td>
+          <td      class="passed"    >58</td>
+          <td      class="failed"    >5</td>
+          <td     class="skipped"   >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">68</td>
+
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >5</td>
+          <td class="total">9</td>
+
+          <td class="duration" data-value="6050368400">6.050</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/karate/bdd/feature/CreditReportService.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Test Credit Report Service for different flows</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.174</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:49:20.077 Loading karate-config 
+15:49:20.078 Karate environment:i0 
+15:49:20.079 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.174</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.796</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the ping endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/ping'</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.792</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>status</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/ping, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.014+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/ping&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:49:21.056 classpath:com/karate/bdd/feature/CreditReportService.feature:11
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/ping, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.014+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/ping&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.147</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:49:20.094 Loading karate-config 
+15:49:20.095 Karate environment:i0 
+15:49:20.096 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.146</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.814</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the orderReport endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/orderReport'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param clientId = rfi.InputRequest.clientId</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param transId = rfi.InputRequest.transId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param rfi = rfi.InputRequest.payload</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.811</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>status</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/orderReport?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.022+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/orderReport&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:21</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>15:49:21.070 classpath:com/karate/bdd/feature/CreditReportService.feature:21
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/orderReport?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.022+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/orderReport&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:21
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.175</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>15:49:20.066 Loading karate-config 
+15:49:20.067 Karate environment:i0 
+15:49:20.068 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.175</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.798</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the orderReport-v2 endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/v2/orderReport'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param clientId = rfi.InputRequest.clientId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param transId = rfi.InputRequest.transId</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param rfi = rfi.InputRequest.payload</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.794</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
+          <a>status</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/v2/orderReport?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.014+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/v2/orderReport&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:31</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>15:49:21.059 classpath:com/karate/bdd/feature/CreditReportService.feature:31
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/v2/orderReport?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.014+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/v2/orderReport&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:31
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.175</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>15:49:20.032 Loading karate-config 
+15:49:20.041 Karate environment:i0 
+15:49:20.044 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.174</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.798</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the processRequestRfi endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-26">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/creditReportRS/processRequestRfi'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param clientId = rfi.InputRequest.clientId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param transId = rfi.InputRequest.transId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param rfi = rfi.InputRequest.payload</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.795</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
+          <a>status</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/creditReportRS/processRequestRfi?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.022+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/creditReportRS/processRequestRfi&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:41</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>15:49:21.066 classpath:com/karate/bdd/feature/CreditReportService.feature:41
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 441, url: https://selsi0.pri.kemper.com/creditReportRS/processRequestRfi?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3Csex%3EM%3C%2Fsex%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3EWyiley%3C%2FlastName%3E%3CfirstName%3EDyan%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.022+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/creditReportRS/processRequestRfi&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:41
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>15:49:20.085 Loading karate-config 
+15:49:20.086 Karate environment:i0 
+15:49:20.087 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.163</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.827</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-32">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the processRequestRfi endpoint with no Gender</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-32" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/creditReportRS/processRequestRfi'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param clientId = rfi.InputRequest.clientId</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param transId = rfi.InputRequest.transId</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param rfi = rfi.InputRequest.payloadWithoutGender</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.820</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
+          <a>status</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 200, response time in milliseconds: 472, url: https://selsi0.pri.kemper.com/creditReportRS/processRequestRfi?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3Eken%3C%2FlastName%3E%3CfirstName%3Ejohn%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.052+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/creditReportRS/processRequestRfi&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:51</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>15:49:21.083 classpath:com/karate/bdd/feature/CreditReportService.feature:51
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 472, url: https://selsi0.pri.kemper.com/creditReportRS/processRequestRfi?clientId=SoapUI&amp;rfi=%3Crfi%3E%3Corigin%3ESoapUI%3C%2Forigin%3E%3CBusinessType%3EN%3C%2FBusinessType%3E%3Ccommand%2F%3E%3CselectedState%3EFL%3C%2FselectedState%3E%3CselectedCompany%3EValueAdded%3C%2FselectedCompany%3E%3CpolicyTypeNumber%3E572%3C%2FpolicyTypeNumber%3E%3CpolicyNumber%2F%3E%3CQuoteId%2F%3E%3Cagent+id%3D%22Agent%2523+0%22+company%3D%2280%22%3E%3Cproducercode%3E990101%3C%2Fproducercode%3E%3Csubproducercode%3E016243%3C%2Fsubproducercode%3E%3CInfAgentCode%3E5016243%3C%2FInfAgentCode%3E%3C%2Fagent%3E%3Cdriver+id%3D%22Driver%2523+0%22%3E%3Cage%3E34%3C%2Fage%3E%3CorderFR%3EY%3C%2ForderFR%3E%3Crelationship%3EInsured%3C%2Frelationship%3E%3ClastName%3Eken%3C%2FlastName%3E%3CfirstName%3Ejohn%3C%2FfirstName%3E%3CmiddleInitial%3ET%3C%2FmiddleInitial%3E%3CbirthDate%3E19670904%3C%2FbirthDate%3E%3CSSN%3E111223333%3C%2FSSN%3E%3Caddress%3E12345+Main+Street%3C%2Faddress%3E%3Ccity%3EJasper%3C%2Fcity%3E%3Cstate%3EAL%3C%2Fstate%3E%3Czip%3E35501%3C%2Fzip%3E%3C%2Fdriver%3E%3C%2Frfi%3E&amp;transId=123, response: 
+{&quot;timestamp&quot;:&quot;2023-02-10T21:49:21.052+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/creditReportRS/processRequestRfi&quot;}
+classpath:com/karate/bdd/feature/CreditReportService.feature:51
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.015</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>15:49:21.071 Loading karate-config 
+15:49:21.072 Karate environment:i0 
+15:49:21.073 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.409</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the health endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/actuator/health'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.405</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>15:49:21.499 [print] {
+  &quot;status&quot;: &quot;UP&quot;,
+  &quot;components&quot;: {
+    &quot;db&quot;: {
+      &quot;status&quot;: &quot;UP&quot;,
+      &quot;components&quot;: {
+        &quot;dataSource&quot;: {
+          &quot;status&quot;: &quot;UP&quot;,
+          &quot;details&quot;: {
+            &quot;database&quot;: &quot;H2&quot;,
+            &quot;validationQuery&quot;: &quot;isValid()&quot;
+          }
+        },
+        &quot;outcomeDataSource&quot;: {
+          &quot;status&quot;: &quot;UP&quot;,
+          &quot;details&quot;: {
+            &quot;database&quot;: &quot;PostgreSQL&quot;,
+            &quot;validationQuery&quot;: &quot;isValid()&quot;
+          }
+        }
+      }
+    },
+    &quot;deepCustomHealthChecks&quot;: {
+      &quot;status&quot;: &quot;UP&quot;,
+      &quot;components&quot;: {
+        &quot;AddressService&quot;: {
+          &quot;status&quot;: &quot;UP&quot;,
+          &quot;details&quot;: {
+            &quot;duration&quot;: 158,
+            &quot;resourceEnvironment&quot;: &quot;Unknown&quot;,
+            &quot;resourceName&quot;: &quot;AddressService&quot;,
+            &quot;resourceASN&quot;: &quot;ADRS&quot;,
+            &quot;resourceType&quot;: &quot;WebserviceEndpoint&quot;
+          }
+        }
+      }
+    },
+    &quot;discoveryComposite&quot;: {
+      &quot;status&quot;: &quot;DOWN&quot;,
+      &quot;components&quot;: {
+        &quot;discoveryClient&quot;: {
+          &quot;description&quot;: &quot;Discovery Client not initialized&quot;,
+          &quot;status&quot;: &quot;UNKNOWN&quot;
+        }
+      }
+    },
+    &quot;diskSpace&quot;: {
+      &quot;status&quot;: &quot;UP&quot;,
+      &quot;details&quot;: {
+        &quot;total&quot;: 21462233088,
+        &quot;free&quot;: 9436921856,
+        &quot;threshold&quot;: 10485760,
+        &quot;exists&quot;: true
+      }
+    },
+    &quot;hystrix&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;livenessState&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;ping&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;reactiveDiscoveryClients&quot;: {
+      &quot;status&quot;: &quot;DOWN&quot;,
+      &quot;components&quot;: {
+        &quot;Simple Reactive Discovery Client&quot;: {
+          &quot;description&quot;: &quot;Discovery Client not initialized&quot;,
+          &quot;status&quot;: &quot;UNKNOWN&quot;
+        }
+      }
+    },
+    &quot;readinessState&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    },
+    &quot;refreshScope&quot;: {
+      &quot;status&quot;: &quot;UP&quot;
+    }
+  },
+  &quot;groups&quot;: [
+    &quot;deepCustomHealth&quot;,
+    &quot;liveness&quot;,
+    &quot;readiness&quot;
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.003</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-42" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>15:49:21.081 Loading karate-config 
+15:49:21.084 Karate environment:i0 
+15:49:21.089 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.250</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the prometheus endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'actuator/prometheus'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.234</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>15:49:21.341 [print] # HELP system_cpu_usage The &quot;recent cpu usage&quot; of the system the application is running in
+# TYPE system_cpu_usage gauge
+system_cpu_usage 0.03095886
+# HELP jdbc_connections_min Minimum number of idle connections in the pool.
+# TYPE jdbc_connections_min gauge
+jdbc_connections_min{name=&quot;dataSource&quot;,} 10.0
+jdbc_connections_min{name=&quot;outcome&quot;,} 10.0
+# HELP executor_pool_size_threads The current number of threads in the pool
+# TYPE executor_pool_size_threads gauge
+executor_pool_size_threads{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+# TYPE process_uptime_seconds gauge
+process_uptime_seconds 782636.421
+# HELP process_cpu_usage The &quot;recent cpu usage&quot; for the Java Virtual Machine process
+# TYPE process_cpu_usage gauge
+process_cpu_usage 0.02962962962962963
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+# TYPE jvm_buffer_memory_used_bytes gauge
+jvm_buffer_memory_used_bytes{id=&quot;mapped - 'non-volatile memory'&quot;,} 0.0
+jvm_buffer_memory_used_bytes{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_memory_used_bytes{id=&quot;direct&quot;,} 8691720.0
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.675283124869E9
+# HELP tomcat_sessions_created_sessions_total  
+# TYPE tomcat_sessions_created_sessions_total counter
+tomcat_sessions_created_sessions_total 0.0
+# HELP process_files_max_files The maximum file descriptor count
+# TYPE process_files_max_files gauge
+process_files_max_files 1048576.0
+# HELP executor_pool_core_threads The core number of threads for the pool
+# TYPE executor_pool_core_threads gauge
+executor_pool_core_threads{name=&quot;applicationTaskExecutor&quot;,} 8.0
+# HELP application_ready_time_seconds Time taken (ms) for the application to be ready to service requests
+# TYPE application_ready_time_seconds gauge
+application_ready_time_seconds{main_application_class=&quot;com.ipacc.prodprice.selectionscore.SelectionScoreServiceApplication&quot;,} 55.908
+# HELP spring_data_repository_invocations_seconds_max Duration of repository invocations
+# TYPE spring_data_repository_invocations_seconds_max gauge
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;save&quot;,repository=&quot;OutcomeRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findGroup&quot;,repository=&quot;FrGroupRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findByPgmCodeAndLineOfBusinessAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;GeoScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;HouseholdRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findByProgramGroupAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+spring_data_repository_invocations_seconds_max{exception=&quot;None&quot;,method=&quot;findByUwsProgramAndSelectionScoreProgramAndCensusBlockScoreAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;FinalProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.0
+# HELP spring_data_repository_invocations_seconds Duration of repository invocations
+# TYPE spring_data_repository_invocations_seconds summary
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;save&quot;,repository=&quot;OutcomeRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;save&quot;,repository=&quot;OutcomeRepository&quot;,state=&quot;SUCCESS&quot;,} 0.117421121
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findGroup&quot;,repository=&quot;FrGroupRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findGroup&quot;,repository=&quot;FrGroupRepository&quot;,state=&quot;SUCCESS&quot;,} 0.009963846
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findByPgmCodeAndLineOfBusinessAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findByPgmCodeAndLineOfBusinessAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.288330547
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;GeoScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 6.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;GeoScoreRepository&quot;,state=&quot;SUCCESS&quot;,} 0.299439653
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;HouseholdRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findScore&quot;,repository=&quot;HouseholdRepository&quot;,state=&quot;SUCCESS&quot;,} 0.005327806
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findByProgramGroupAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findByProgramGroupAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;ProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.009009433
+spring_data_repository_invocations_seconds_count{exception=&quot;None&quot;,method=&quot;findByUwsProgramAndSelectionScoreProgramAndCensusBlockScoreAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;FinalProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 3.0
+spring_data_repository_invocations_seconds_sum{exception=&quot;None&quot;,method=&quot;findByUwsProgramAndSelectionScoreProgramAndCensusBlockScoreAndEffectiveDateLessThanEqualAndExpirationDateGreaterThan&quot;,repository=&quot;FinalProgramRepository&quot;,state=&quot;SUCCESS&quot;,} 0.009017274
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+# TYPE jvm_memory_max_bytes gauge
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 1.78978816E8
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'profiled nmethods'&quot;,} 1.22912768E8
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 7.1630848E7
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} -1.0
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-nmethods'&quot;,} 5828608.0
+jvm_memory_max_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 8912896.0
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 1.073741824E9
+jvm_memory_max_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-profiled nmethods'&quot;,} 1.22916864E8
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+# TYPE jvm_gc_pause_seconds summary
+jvm_gc_pause_seconds_count{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 1.0
+jvm_gc_pause_seconds_sum{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 0.129
+jvm_gc_pause_seconds_count{action=&quot;end of major GC&quot;,cause=&quot;Allocation Failure&quot;,} 4.0
+jvm_gc_pause_seconds_sum{action=&quot;end of major GC&quot;,cause=&quot;Allocation Failure&quot;,} 0.968
+jvm_gc_pause_seconds_count{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 1678.0
+jvm_gc_pause_seconds_sum{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 5.377
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+# TYPE jvm_gc_pause_seconds_max gauge
+jvm_gc_pause_seconds_max{action=&quot;end of major GC&quot;,cause=&quot;Metadata GC Threshold&quot;,} 0.0
+jvm_gc_pause_seconds_max{action=&quot;end of major GC&quot;,cause=&quot;Allocation Failure&quot;,} 0.0
+jvm_gc_pause_seconds_max{action=&quot;end of minor GC&quot;,cause=&quot;Allocation Failure&quot;,} 0.0
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+# TYPE jvm_threads_daemon_threads gauge
+jvm_threads_daemon_threads 37.0
+# HELP executor_queued_tasks The approximate number of tasks that are queued for execution
+# TYPE executor_queued_tasks gauge
+executor_queued_tasks{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP jvm_gc_max_data_size_bytes Max size of long-lived heap memory pool
+# TYPE jvm_gc_max_data_size_bytes gauge
+jvm_gc_max_data_size_bytes 1.78978816E8
+# HELP hikaricp_connections_usage_seconds Connection usage time
+# TYPE hikaricp_connections_usage_seconds summary
+hikaricp_connections_usage_seconds_count{pool=&quot;HikariPool-1&quot;,} 6586.0
+hikaricp_connections_usage_seconds_sum{pool=&quot;HikariPool-1&quot;,} 17.689
+hikaricp_connections_usage_seconds_count{pool=&quot;SelectionScoreServiceDS&quot;,} 6583.0
+hikaricp_connections_usage_seconds_sum{pool=&quot;SelectionScoreServiceDS&quot;,} 6.711
+# HELP hikaricp_connections_usage_seconds_max Connection usage time
+# TYPE hikaricp_connections_usage_seconds_max gauge
+hikaricp_connections_usage_seconds_max{pool=&quot;HikariPool-1&quot;,} 0.0
+hikaricp_connections_usage_seconds_max{pool=&quot;SelectionScoreServiceDS&quot;,} 0.002
+# HELP hikaricp_connections_idle Idle connections
+# TYPE hikaricp_connections_idle gauge
+hikaricp_connections_idle{pool=&quot;HikariPool-1&quot;,} 10.0
+hikaricp_connections_idle{pool=&quot;SelectionScoreServiceDS&quot;,} 10.0
+# HELP process_files_open_files The open file descriptor count
+# TYPE process_files_open_files gauge
+process_files_open_files 45.0
+# HELP tomcat_sessions_rejected_sessions_total  
+# TYPE tomcat_sessions_rejected_sessions_total counter
+tomcat_sessions_rejected_sessions_total 0.0
+# HELP jvm_threads_states_threads The current number of threads
+# TYPE jvm_threads_states_threads gauge
+jvm_threads_states_threads{state=&quot;runnable&quot;,} 11.0
+jvm_threads_states_threads{state=&quot;blocked&quot;,} 0.0
+jvm_threads_states_threads{state=&quot;waiting&quot;,} 12.0
+jvm_threads_states_threads{state=&quot;timed-waiting&quot;,} 18.0
+jvm_threads_states_threads{state=&quot;new&quot;,} 0.0
+jvm_threads_states_threads{state=&quot;terminated&quot;,} 0.0
+# HELP jvm_gc_overhead_percent An approximation of the percent of CPU time used by GC activities over the last lookback period or since monitoring began, whichever is shorter, in the range [0..1]
+# TYPE jvm_gc_overhead_percent gauge
+jvm_gc_overhead_percent 1.0E-5
+# HELP logback_events_total Number of events that made it to the logs
+# TYPE logback_events_total counter
+logback_events_total{level=&quot;warn&quot;,} 4.0
+logback_events_total{level=&quot;debug&quot;,} 0.0
+logback_events_total{level=&quot;error&quot;,} 0.0
+logback_events_total{level=&quot;trace&quot;,} 0.0
+logback_events_total{level=&quot;info&quot;,} 13204.0
+# HELP application_started_time_seconds Time taken (ms) to start the application
+# TYPE application_started_time_seconds gauge
+application_started_time_seconds{main_application_class=&quot;com.ipacc.prodprice.selectionscore.SelectionScoreServiceApplication&quot;,} 55.618
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+# TYPE jvm_memory_committed_bytes gauge
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 1.2558336E8
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'profiled nmethods'&quot;,} 2.9294592E7
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 5.0397184E7
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} 1.04005632E8
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-nmethods'&quot;,} 2555904.0
+jvm_memory_committed_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 6225920.0
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 1.3172736E7
+jvm_memory_committed_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-profiled nmethods'&quot;,} 1.736704E7
+# HELP tomcat_sessions_active_current_sessions  
+# TYPE tomcat_sessions_active_current_sessions gauge
+tomcat_sessions_active_current_sessions 0.0
+# HELP jvm_memory_usage_after_gc_percent The percentage of long-lived heap pool used after the last GC event, in the range [0..1]
+# TYPE jvm_memory_usage_after_gc_percent gauge
+jvm_memory_usage_after_gc_percent{area=&quot;heap&quot;,pool=&quot;long-lived&quot;,} 0.45848514273331653
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+# TYPE jvm_threads_live_threads gauge
+jvm_threads_live_threads 41.0
+# HELP jdbc_connections_max Maximum number of active connections that can be allocated at the same time.
+# TYPE jdbc_connections_max gauge
+jdbc_connections_max{name=&quot;dataSource&quot;,} 10.0
+jdbc_connections_max{name=&quot;outcome&quot;,} 10.0
+# HELP tomcat_sessions_active_max_sessions  
+# TYPE tomcat_sessions_active_max_sessions gauge
+tomcat_sessions_active_max_sessions 0.0
+# HELP tomcat_sessions_alive_max_seconds  
+# TYPE tomcat_sessions_alive_max_seconds gauge
+tomcat_sessions_alive_max_seconds 0.0
+# HELP executor_pool_max_threads The maximum allowed number of threads in the pool
+# TYPE executor_pool_max_threads gauge
+executor_pool_max_threads{name=&quot;applicationTaskExecutor&quot;,} 2.147483647E9
+# HELP jvm_memory_used_bytes The amount of used memory
+# TYPE jvm_memory_used_bytes gauge
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Tenured Gen&quot;,} 8.2059128E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'profiled nmethods'&quot;,} 2.7933312E7
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Eden Space&quot;,} 2.5640096E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;Metaspace&quot;,} 1.03224056E8
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-nmethods'&quot;,} 1816960.0
+jvm_memory_used_bytes{area=&quot;heap&quot;,id=&quot;Survivor Space&quot;,} 1307104.0
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;Compressed Class Space&quot;,} 1.27662E7
+jvm_memory_used_bytes{area=&quot;nonheap&quot;,id=&quot;CodeHeap 'non-profiled nmethods'&quot;,} 1.7349504E7
+# HELP tomcat_sessions_expired_sessions_total  
+# TYPE tomcat_sessions_expired_sessions_total counter
+tomcat_sessions_expired_sessions_total 0.0
+# HELP jvm_gc_memory_promoted_bytes_total Count of positive increases in the size of the old generation memory pool before GC to after GC
+# TYPE jvm_gc_memory_promoted_bytes_total counter
+jvm_gc_memory_promoted_bytes_total 1.17832392E8
+# HELP disk_total_bytes Total space for path
+# TYPE disk_total_bytes gauge
+disk_total_bytes{path=&quot;/.&quot;,} 2.1462233088E10
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+# TYPE jvm_threads_peak_threads gauge
+jvm_threads_peak_threads 45.0
+# HELP disk_free_bytes Usable space for path
+# TYPE disk_free_bytes gauge
+disk_free_bytes{path=&quot;/.&quot;,} 9.436921856E9
+# HELP hikaricp_connections_min Min connections
+# TYPE hikaricp_connections_min gauge
+hikaricp_connections_min{pool=&quot;HikariPool-1&quot;,} 10.0
+hikaricp_connections_min{pool=&quot;SelectionScoreServiceDS&quot;,} 10.0
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+# TYPE jvm_buffer_total_capacity_bytes gauge
+jvm_buffer_total_capacity_bytes{id=&quot;mapped - 'non-volatile memory'&quot;,} 0.0
+jvm_buffer_total_capacity_bytes{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_total_capacity_bytes{id=&quot;direct&quot;,} 8691719.0
+# HELP executor_queue_remaining_tasks The number of additional elements that this queue can ideally accept without blocking
+# TYPE executor_queue_remaining_tasks gauge
+executor_queue_remaining_tasks{name=&quot;applicationTaskExecutor&quot;,} 2.147483647E9
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+# TYPE system_cpu_count gauge
+system_cpu_count 1.0
+# HELP executor_active_threads The approximate number of threads that are actively executing tasks
+# TYPE executor_active_threads gauge
+executor_active_threads{name=&quot;applicationTaskExecutor&quot;,} 0.0
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+# TYPE jvm_buffer_count_buffers gauge
+jvm_buffer_count_buffers{id=&quot;mapped - 'non-volatile memory'&quot;,} 0.0
+jvm_buffer_count_buffers{id=&quot;mapped&quot;,} 0.0
+jvm_buffer_count_buffers{id=&quot;direct&quot;,} 22.0
+# HELP executor_completed_tasks_total The approximate total number of tasks that have completed execution
+# TYPE executor_completed_tasks_total counter
+executor_completed_tasks_total{name=&quot;applicationTaskExecutor&quot;,} 3.0
+# HELP hikaricp_connections Total connections
+# TYPE hikaricp_connections gauge
+hikaricp_connections{pool=&quot;HikariPool-1&quot;,} 10.0
+hikaricp_connections{pool=&quot;SelectionScoreServiceDS&quot;,} 10.0
+# HELP hikaricp_connections_max Max connections
+# TYPE hikaricp_connections_max gauge
+hikaricp_connections_max{pool=&quot;HikariPool-1&quot;,} 10.0
+hikaricp_connections_max{pool=&quot;SelectionScoreServiceDS&quot;,} 10.0
+# HELP http_server_requests_seconds Duration of HTTP server request handling
+# TYPE http_server_requests_seconds summary
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 3.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 0.01696316
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 13044.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 20.835857243
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 1243658.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 425.986357939
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 3287.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 596.272581369
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/v2/selectFinalProgram&quot;,} 3.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/v2/selectFinalProgram&quot;,} 1.621783668
+http_server_requests_seconds_count{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 2.0
+http_server_requests_seconds_sum{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 0.038619539
+# HELP http_server_requests_seconds_max Duration of HTTP server request handling
+# TYPE http_server_requests_seconds_max gauge
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 0.013767745
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/prometheus&quot;,} 0.001961436
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health/**&quot;,} 5.74634E-4
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/actuator/health&quot;,} 0.138117004
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;POST&quot;,outcome=&quot;SUCCESS&quot;,status=&quot;200&quot;,uri=&quot;/v2/selectFinalProgram&quot;,} 0.0
+http_server_requests_seconds_max{exception=&quot;None&quot;,method=&quot;GET&quot;,outcome=&quot;CLIENT_ERROR&quot;,status=&quot;404&quot;,uri=&quot;/**&quot;,} 0.016582891
+# HELP jvm_gc_memory_allocated_bytes_total Incremented for an increase in the size of the (young) heap memory pool after one GC to before the next
+# TYPE jvm_gc_memory_allocated_bytes_total counter
+jvm_gc_memory_allocated_bytes_total 8.1006257856E10
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+# TYPE jvm_classes_loaded_classes gauge
+jvm_classes_loaded_classes 19010.0
+# HELP jvm_classes_unloaded_classes_total The total number of classes unloaded since the Java virtual machine has started execution
+# TYPE jvm_classes_unloaded_classes_total counter
+jvm_classes_unloaded_classes_total 0.0
+# HELP jvm_gc_live_data_size_bytes Size of long-lived heap memory pool after reclamation
+# TYPE jvm_gc_live_data_size_bytes gauge
+jvm_gc_live_data_size_bytes 7.5348968E7
+# HELP hikaricp_connections_pending Pending threads
+# TYPE hikaricp_connections_pending gauge
+hikaricp_connections_pending{pool=&quot;HikariPool-1&quot;,} 0.0
+hikaricp_connections_pending{pool=&quot;SelectionScoreServiceDS&quot;,} 0.0
+# HELP system_load_average_1m The sum of the number of runnable entities queued to available processors and the number of runnable entities running on the available processors averaged over a period of time
+# TYPE system_load_average_1m gauge
+system_load_average_1m 1.0537109375
+# HELP hikaricp_connections_active Active connections
+# TYPE hikaricp_connections_active gauge
+hikaricp_connections_active{pool=&quot;HikariPool-1&quot;,} 0.0
+hikaricp_connections_active{pool=&quot;SelectionScoreServiceDS&quot;,} 0.0
+# HELP hikaricp_connections_creation_seconds_max Connection creation time
+# TYPE hikaricp_connections_creation_seconds_max gauge
+hikaricp_connections_creation_seconds_max{pool=&quot;HikariPool-1&quot;,} 0.0
+hikaricp_connections_creation_seconds_max{pool=&quot;SelectionScoreServiceDS&quot;,} 0.039
+# HELP hikaricp_connections_creation_seconds Connection creation time
+# TYPE hikaricp_connections_creation_seconds summary
+hikaricp_connections_creation_seconds_count{pool=&quot;HikariPool-1&quot;,} 4408.0
+hikaricp_connections_creation_seconds_sum{pool=&quot;HikariPool-1&quot;,} 0.001
+hikaricp_connections_creation_seconds_count{pool=&quot;SelectionScoreServiceDS&quot;,} 4409.0
+hikaricp_connections_creation_seconds_sum{pool=&quot;SelectionScoreServiceDS&quot;,} 154.475
+# HELP hikaricp_connections_timeout_total Connection timeout total count
+# TYPE hikaricp_connections_timeout_total counter
+hikaricp_connections_timeout_total{pool=&quot;HikariPool-1&quot;,} 0.0
+hikaricp_connections_timeout_total{pool=&quot;SelectionScoreServiceDS&quot;,} 0.0
+# HELP hikaricp_connections_acquire_seconds Connection acquire time
+# TYPE hikaricp_connections_acquire_seconds summary
+hikaricp_connections_acquire_seconds_count{pool=&quot;HikariPool-1&quot;,} 6586.0
+hikaricp_connections_acquire_seconds_sum{pool=&quot;HikariPool-1&quot;,} 0.019194658
+hikaricp_connections_acquire_seconds_count{pool=&quot;SelectionScoreServiceDS&quot;,} 6583.0
+hikaricp_connections_acquire_seconds_sum{pool=&quot;SelectionScoreServiceDS&quot;,} 11.851863289
+# HELP hikaricp_connections_acquire_seconds_max Connection acquire time
+# TYPE hikaricp_connections_acquire_seconds_max gauge
+hikaricp_connections_acquire_seconds_max{pool=&quot;HikariPool-1&quot;,} 2.69E-6
+hikaricp_connections_acquire_seconds_max{pool=&quot;SelectionScoreServiceDS&quot;,} 0.003525723
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-49" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>15:49:21.098 Loading karate-config 
+15:49:21.098 Karate environment:i0 
+15:49:21.099 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.243</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-51">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the liveness endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-51" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-52">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-52" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'actuator/health/liveness'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.220</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response contains {&quot;status&quot;: &quot;UP&quot;}</span>
+  
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>15:49:21.355 [print] {
+  &quot;status&quot;: &quot;UP&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.004</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-54">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-54" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-55">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-55" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>15:49:21.123 Loading karate-config 
+15:49:21.125 Karate environment:i0 
+15:49:21.127 Karate baseURL:https://selsi0.pri.kemper.com 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def rfi = read('../data/crs/crs-data-' + env + '.yml')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.239</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-57">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To test for the readiness endpoint</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-57" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-58">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-58" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'actuator/health/readiness'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.235</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response contains {&quot;status&quot;: &quot;UP&quot;}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-59">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details">
+        <pre>15:49:21.373 [print] {
+  &quot;status&quot;: &quot;UP&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

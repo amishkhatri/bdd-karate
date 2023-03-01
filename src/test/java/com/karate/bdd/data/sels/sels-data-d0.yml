@@ -1,0 +1,110 @@
+InputRequest:
+  selectProgramPayload: {
+    "serviceInfo": {
+      "transId": "SEL-20220914123746280",
+      "clientId": "Greg_test",
+      "quoteId": 34389726
+    },
+    "selectProgramData": {
+      "state": "TX",
+      "pgmCode": "14255",
+      "lineOfBusiness": "PP",
+      "policyTypeCode": "572",
+      "effectiveDate": "2022-09-23T00:00",
+      "frLevel": 61,
+      "numDrivers": 1,
+      "numVehicles": 2,
+      "violationPoints": 0,
+      "homeOwner": true,
+      "maritalStatus": "S",
+      "agentQualifiedPrograms": [
+        "54286",
+        "14255",
+        "14215",
+        "14256",
+        "14216"
+      ]
+    },
+    "geoCode": {
+      "stateCode": "48",
+      "countyCode": "029",
+      "censusTract": "161902",
+      "censusBlockGroup": "2",
+      "censusBlock": "003"
+    },
+    "currentCarrier": {
+      "currCarrier": "AMFAM INS CO",
+      "NAIC": "10386",
+      "AMB": "0"
+    }
+  }
+  selectFinalProgramPayload: {
+    "serviceInfo": {
+      "transId": "TestTransId",
+      "clientId": "TestClient",
+      "quoteId": 1234
+    },
+    "selectProgramData": {
+      "state": "FL",
+      "pgmCode": "10980",
+      "companyNumber": "81",
+      "lineOfBusiness": "PP",
+      "policyTypeCode": "572",
+      "effectiveDate": "2020-01-01T00:00",
+      "frLevel": 11,
+      "numDrivers": 3,
+      "numVehicles": 3,
+      "homeOwner": false,
+      "maritalStatus": "S",
+      "agencySelectionScoreSingleVeh": 0,
+      "agencySelectionScoreMultiVeh": 0,
+      "agentQualifiedPrograms": [
+        "10980",
+        "10981"
+      ]
+    },
+    "geoCode": {
+      "stateCode": "12",
+      "countyCode": "113",
+      "censusTract": "010200",
+      "censusBlockGroup": "2",
+      "censusBlock": "010"
+    },
+    "addressMasterId": 306778,
+    "uwsProgram": "LOWCOST"
+  }
+  selectFinalProgramPayloadWithDownstreamCall: {
+    "serviceInfo": {
+      "transId": "TestTransId",
+      "clientId": "TestClient",
+      "quoteId": 1234
+    },
+    "selectProgramData": {
+      "state": "FL",
+      "pgmCode": "10980",
+      "companyNumber": "81",
+      "lineOfBusiness": "PP",
+      "policyTypeCode": "572",
+      "effectiveDate": "2020-01-01T00:00",
+      "frLevel": 11,
+      "numDrivers": 3,
+      "numVehicles": 3,
+      "homeOwner": false,
+      "maritalStatus": "S",
+      "agencySelectionScoreSingleVeh": 0,
+      "agencySelectionScoreMultiVeh": 0,
+      "agentQualifiedPrograms": [
+        "10980",
+        "10981"
+      ]
+    },
+    "geoCode": {
+      "stateCode": "12",
+      "countyCode": "113",
+      "censusTract": "010200",
+      "censusBlockGroup": "2",
+      "censusBlock": "010"
+    },
+    "addressMasterId": 306778,
+    "uwsProgram": "LOWCOST"
+  }

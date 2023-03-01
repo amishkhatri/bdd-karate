@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.karate.bdd.BDDTestSuiteRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 72.946 s <<< FAILURE! - in com.karate.bdd.BDDTestSuiteRunner
+testParallel  Time elapsed: 72.935 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 62260 milliseconds for url: https://prssu0.pri.kemper.com/policyReportSearchService/v2/expiredPolicyReportSearch?req=%7B%22agencyCodes%22%3A%5B27741%2C26892%5D%2C%22insuredState%22%3A%5B%22CA%22%5D%2C%22beginDate%22%3A%2211%5C%2F17%5C%2F2016%22%2C%22endDate%22%3A%2201%5C%2F01%5C%2F2017%22%7D
+classpath:com/karate/bdd/feature/PolicyReportSearchService.feature:83 ==> expected: <0> but was: <1>
+	at com.karate.bdd.BDDTestSuiteRunner.testParallel(BDDTestSuiteRunner.java:24)
+

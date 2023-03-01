@@ -1,0 +1,23 @@
+InputRequest:
+  insuredName: {"insuredName":"Smith","agencyCodes":[26892]}
+  policyId: {"policyId":"104267105682001","agencyCodes":[26892]}
+  agencyCodes: {"agencyCodes":[5003]}
+  dailyActivitiesInput: {"sectionNames":["CNXFINAL"],"agencyCodes":[5531092,5003],"fromDate":"01/01/2011","toDate":"01/01/2022"}
+  paymentSearchInput: {"agencyCodes":[27741,26892,5003],"insuredState":["CA"],"beginDate":"01/01/2016","endDate":"01/01/2017"}
+  renewalSearchInput: {"agencyCodes":[5530946,26892],"insuredState":["CA"],"beginDate":"01/01/2016","endDate":"01/01/2022","externalIds":[]}
+  inforcedPolicyReportSearchInput: {"agencyCodes":[9602,10494,5003],"insuredState":["AL"],"beginDate":"01/01/2011","endDate":"01/01/2017"}
+  expiredPolicyReportSearchInput: {"agencyCodes":[27741,26892],"insuredState":["CA"],"beginDate":"11/17/2016","endDate":"01/01/2017"}
+  cancelPendingPolicyReportSearchInput: {"agencyCodes":[26892],"insuredState":["CA"],"beginDate":"01/01/2016","endDate":"01/01/2022"}
+  allPoliciesReportSearchInput: {"agencyCodes":[5003],"insuredState":["CA"],"beginDate":"01/01/2011","endDate":"01/01/2022"}
+  invoicedRenewalsReportSearchInput: {"agencyCodes":[5003],"insuredState":["CA"],"beginDate":"01/01/2011","endDate":"01/01/2022"}
+  suspenseMemoSearchInput: {"agencyNums":[9602,10494],"fromDate":"01/01/2011","toDate":"01/01/2017"}
+  policyReportSearchInput: {"agencyNums": ["5003","5530946","5531092","5531101","5531104","5531106","5531134","5531135","5531199","5531215"],
+                            "reportNames": ["NEWBUSINESSRENEWALS"],"reportDateFrom": "01/04/2023","reportDateTo": "01/05/2023","cutOffDate": "10/05/2017","externalIds":[]}
+  applicationUploadSearchInput: {"agencyNums":[9602,10494],"startDate":"01/01/2011","endDate":"01/01/2017"}
+  pifSearchInput: {"agencyNums":[5003,10494],"dbEnvirnoment":"d0","state":"CA","productNumber":"1","externalIds":[]}
+  policyReportSearchCountInput: {"policyReportSearchRequest": {"agencyNums": ["5003","5530946","5531092","5531101","5531104","5531106","5531134","5531135","5531199","5531215"],
+                                                               "reportNames": [],"reportDateFrom": "03/02/2021","reportDateTo": "03/03/2021","cutOffDate": "10/05/2017"},
+                                 "suspenseMemoSearchRequest": {"agencyNums": [9602,10494],"fromDate": "01/01/2011","toDate": "01/01/2017"},
+                                 "agencyRenewalSearchRequest": {"agencyCodes": [5530946,10494],"insuredState": ["IL"],"beginDate": "01/01/2011","endDate": "01/01/2022"},
+                                 "pendingCancellations": {"agencyNums": ["5003","5530946","5531092","5531101","5531104","5531106","5531134","5531135","5531199","5531215"],
+                                                          "reportNames": [],"reportDateFrom": "03/02/2021","reportDateTo": "03/03/2021","cutOffDate": "10/05/2017"}}
